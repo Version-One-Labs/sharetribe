@@ -181,3 +181,4 @@ gem 'bootsnap', require: false
 gem "select2-rails"
 gem "cocoon"
 gem "fast-polylines"
+gem 'geocoder', github: 'alexreisner/geocoder'
