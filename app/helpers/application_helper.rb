@@ -479,7 +479,8 @@ module ApplicationHelper
         :topic => :configure,
         :text => t("admin.landing_page.landing_page"),
         :icon_class => icon_class("home"),
-        :path => @current_plan.try(:[], :features).try(:[], :landing_page) ? admin_landing_page_versions_path : admin_landing_page_path,
+        #:path => @current_plan.try(:[], :features).try(:[], :landing_page) ? admin_landing_page_versions_path : admin_landing_page_path,
+        :path => true ? admin_landing_page_versions_path : admin_landing_page_path,
         :name => "landing_page"
       }
     end
