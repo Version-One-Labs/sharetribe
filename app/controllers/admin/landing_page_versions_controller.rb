@@ -1,5 +1,5 @@
 class Admin::LandingPageVersionsController < Admin::AdminBaseController
-  before_action :ensure_plan
+  #before_action :ensure_plan
   before_action :set_selected_left_navi_link
   before_action :set_service
 
